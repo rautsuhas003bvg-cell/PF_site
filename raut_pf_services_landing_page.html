@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAUT PF SERVICES | Your Trusted Partner for EPFO & Labour Services</title>
+  
+  <!-- Google Fonts: Poppins & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for exact iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#061633',
+              navy: '#0B2559',
+              blue: '#0F429A',
+              lightBlue: '#1E63D5',
+              accent: '#F59E0B',
+              gold: '#FBBF24',
+              softBg: '#F3F6FB'
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            'glow': '0 0 25px rgba(245, 158, 11, 0.45)',
+            'card': '0 10px 30px -5px rgba(11, 37, 89, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .font-heading {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 15% 20%, #163B80 0%, #0B2559 60%, #061633 100%);
+    }
+    .text-stroke-gold {
+      -webkit-text-stroke: 1px #FBBF24;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFE082 0%, #FBBF24 50%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .badge-ribbon {
+      clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
+    }
+    /* Smooth pulsating phone effect */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 16px rgba(245, 158, 11, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+    .pulse-gold {
+      animation: pulse-ring 2.2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-softBg text-slate-800 antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- Top Billboard Marathi Slogan Bar -->
+  <header class="bg-brand-dark text-white border-b border-brand-lightBlue/30 text-xs sm:text-sm md:text-base py-2.5 px-4 shadow-md sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brand-gold text-brand-dark font-black text-xs">★</span>
+        <span class="font-heading font-semibold tracking-wide text-amber-300">
+          “तुमच्या PF च्या प्रत्येक समस्येचे एकच समाधान – <span class="text-white underline decoration-brand-gold underline-offset-4">RAUT PF SERVICES</span>”
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:8779695389" class="text-white hover:text-brand-gold transition-colors flex items-center gap-1.5 font-bold">
+          <i class="fa-solid fa-phone text-brand-gold"></i> 8779695389
+        </a>
+        <span class="text-slate-500">|</span>
+        <a href="mailto:rautsuhas003.bvg@gmail.com" class="text-slate-300 hover:text-white transition-colors hidden md:inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-envelope text-brand-gold"></i> rautsuhas003.bvg@gmail.com
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary Navigation -->
+  <nav class="bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-blue to-brand-navy flex items-center justify-center text-brand-gold text-2xl shadow-md border border-brand-lightBlue/30 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-heading font-black text-2xl tracking-wider text-brand-navy">RAUT</span>
+            <span class="font-heading font-extrabold text-sm uppercase text-brand-accent tracking-widest">PF SERVICES</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-medium tracking-tight">Your Trusted Partner for EPFO & Labour Services</p>
+        </div>
+      </a>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="#services" class="hidden md:inline-flex text-sm font-semibold text-brand-navy hover:text-brand-blue transition-colors px-3 py-2">
+          Our Services
+        </a>
+        <a href="#why-choose-us" class="hidden md:inline-flex text-sm font-semibold text-brand-navy hover:text-brand-blue transition-colors px-3 py-2">
+          Why Choose Us
+        </a>
+        <a href="https://wa.me/918779695389?text=Hello%20Raut%20PF%20Services,%20I%20need%20assistance%20with%20my%20PF/EPFO%20issue." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-4 py-2.5 rounded-lg shadow transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden sm:inline">WhatsApp Us</span>
+        </a>
+        <a href="tel:8779695389" class="inline-flex items-center gap-2 bg-brand-accent hover:bg-amber-500 text-brand-dark text-sm font-extrabold px-4 py-2.5 rounded-lg shadow-md transition transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-hero text-white relative overflow-hidden py-14 lg:py-20">
+    <!-- Abstract background grid & glow rings -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-lightBlue/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/3 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue/60 border border-brand-lightBlue/40 text-brand-gold text-xs sm:text-sm font-bold tracking-wide shadow-inner">
+            <i class="fa-solid fa-award"></i>
+            <span>YOUR TRUST, OUR PROMISE</span>
+          </div>
+
+          <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-none">
+            <span class="text-white block">RAUT</span>
+            <span class="gold-gradient-text block">PF SERVICES</span>
+          </h1>
+
+          <div class="h-1.5 w-24 bg-brand-gold rounded-full mx-auto lg:mx-0 shadow-glow"></div>
+
+          <div class="space-y-2">
+            <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold font-heading text-slate-100 tracking-wide">
+              ALL YOUR PF & EPFO NEEDS <br class="hidden sm:block"/>
+              <span class="bg-brand-accent text-brand-dark px-3 py-1 rounded inline-block mt-1 font-black">
+                UNDER ONE ROOF
+              </span>
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 pt-2 font-light">
+              We make PF processes <strong class="text-white font-semibold">simple, fast and hassle-free</strong>. Professional guidance for withdrawals, KYC update, name errors, joint declarations and grievances.
+            </p>
+          </div>
+
+          <!-- Direct Call Billboard Banner Block -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4 max-w-xl mx-auto lg:mx-0">
+            <div class="flex items-center gap-4">
+              <a href="tel:8779695389" class="w-14 h-14 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center text-2xl font-black pulse-gold shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <div class="text-left">
+                <p class="text-xs uppercase text-amber-300 font-bold tracking-wider">Direct Helpline</p>
+                <a href="tel:8779695389" class="font-heading font-black text-2xl sm:text-3xl text-white hover:text-brand-gold tracking-tight transition-colors">
+                  8779695389
+                </a>
+              </div>
+            </div>
+            <a href="tel:8779695389" class="w-full sm:w-auto bg-brand-gold hover:bg-amber-400 text-brand-dark font-extrabold px-5 py-3 rounded-xl transition text-center shadow-lg text-sm uppercase tracking-wide">
+              Instant Help
+            </a>
+          </div>
+
+          <!-- Trust Badges Under Hero -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Online Support</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Expert Resolution</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Fast Turnaround</span>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Column: Interactive Quick Consultation Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-brand-gold/40 relative">
+            
+            <div class="absolute -top-4 right-6 bg-brand-navy text-brand-gold text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider shadow">
+              EPFO Desk Priority
+            </div>
+
+            <div class="text-center mb-6">
+              <span class="inline-block p-2.5 rounded-2xl bg-brand-softBg text-brand-blue mb-2">
+                <i class="fa-solid fa-clipboard-check text-2xl"></i>
+              </span>
+              <h3 class="font-heading font-bold text-xl sm:text-2xl text-brand-navy">Submit Your PF Query</h3>
+              <p class="text-xs text-slate-500 mt-1">Get immediate advice on phone & WhatsApp</p>
+            </div>
+
+            <form id="leadForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="clientName">Your Full Name</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-regular fa-user text-sm"></i></span>
+                  <input type="text" id="clientName" required placeholder="e.g. Ramesh Patil" class="w-full pl-10 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="clientPhone">Mobile / WhatsApp No.</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-mobile-screen text-sm"></i></span>
+                  <input type="tel" id="clientPhone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}" class="w-full pl-10 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="serviceNeeded">Service Required</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-list-check text-sm"></i></span>
+                  <select id="serviceNeeded" class="w-full pl-10 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent bg-white transition">
+                    <option value="PF Withdrawal (Form 19, 10C, 31)">PF Withdrawal (Form 19, 10C, 31)</option>
+                    <option value="UAN Activation">UAN Activation</option>
+                    <option value="KYC Update (Aadhaar, PAN, Bank)">KYC Update (Aadhaar, PAN, Bank)</option>
+                    <option value="Name / DOB Correction">Name / DOB Correction</option>
+                    <option value="PF Transfer">PF Transfer (Previous to Present)</option>
+                    <option value="Pension (Form 10D)">Pension (Form 10D)</option>
+                    <option value="Joint Declaration Correction">Joint Declaration</option>
+                    <option value="EDLI Death Claim">EDLI Death Claim</option>
+                    <option value="EPFO Grievance Resolution">EPFO Grievance</option>
+                    <option value="Passbook Download">Passbook Download</option>
+                    <option value="PAN Card Services">PAN Card Services</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="clientNote">Problem Details (Optional)</label>
+                <textarea id="clientNote" rows="2" placeholder="Briefly describe your PF issue..." class="w-full px-3 py-2 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Connect on WhatsApp Now</span>
+              </button>
+
+              <div id="formSuccessToast" class="hidden p-3 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-semibold text-center border border-emerald-200">
+                Opening WhatsApp with your pre-filled inquiry...
+              </div>
+            </form>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span><i class="fa-solid fa-lock text-brand-blue"></i> 100% Confidential</span>
+              <span><i class="fa-solid fa-bolt text-brand-accent"></i> Fast WhatsApp Reply</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Yellow / Gold Commitment Banner -->
+  <section class="bg-gradient-to-r from-amber-400 via-brand-gold to-amber-500 text-brand-dark py-4 px-4 shadow-md font-heading font-black">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+      <div class="flex items-center gap-3">
+        <span class="w-9 h-9 rounded-full bg-brand-dark text-brand-gold flex items-center justify-center text-lg">
+          <i class="fa-solid fa-handshake"></i>
+        </span>
+        <span class="text-sm sm:text-base md:text-lg tracking-wide uppercase">
+          YOUR PF, OUR COMMITMENT &nbsp;|&nbsp; YOUR FUTURE, OUR PRIORITY
+        </span>
+      </div>
+      <a href="tel:8779695389" class="bg-brand-dark hover:bg-slate-900 text-brand-gold text-xs sm:text-sm px-4 py-2 rounded-lg transition font-extrabold inline-flex items-center gap-2 shadow">
+        <i class="fa-solid fa-phone"></i>
+        <span>Call: 8779695389</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Our Services Section (All 11 flyer services) -->
+  <section id="services" class="py-16 md:py-24 bg-slate-50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="inline-block bg-brand-navy text-white text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+          OUR SERVICES
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl text-brand-navy">
+          Comprehensive EPFO & Labour Services
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          From full withdrawals and pension claims to complicated joint declarations and name corrections, we handle the entire process smoothly.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. PF Withdrawal -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              PF Withdrawal
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Form 19, 10C & 31</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Complete withdrawal after leaving service or advance claim for medical, marriage, house construction or illness.
+            </p>
+          </div>
+          <button onclick="quickInquire('PF Withdrawal (Form 19, 10C, 31)')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 2. UAN Activation -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              UAN Activation
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Member Portal Access</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Activate your Universal Account Number, link your current mobile, and regain instant access to member login.
+            </p>
+          </div>
+          <button onclick="quickInquire('UAN Activation')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 3. KYC Update -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              KYC Update
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Aadhaar, PAN & Bank</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Link and approve Aadhaar, update new bank account with verified IFSC, and seed PAN card to prevent high TDS deductions.
+            </p>
+          </div>
+          <button onclick="quickInquire('KYC Update (Aadhaar, PAN, Bank)')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 4. Name / DOB Correction -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              Name / DOB Correction
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Member Profile Fixes</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Rectify mismatched member name, father's name, gender, or date of birth according to official Aadhaar records.
+            </p>
+          </div>
+          <button onclick="quickInquire('Name / DOB Correction')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 5. PF Transfer -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-right-left"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              PF Transfer
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Previous to Present Company</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Online PF balance merge & service transfer through Form 13 to maintain continuous service and tax benefits.
+            </p>
+          </div>
+          <button onclick="quickInquire('PF Transfer')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 6. Pension (Form 10D) -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              Pension (Form 10D)
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">EPS 1995 Pension Filing</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Filing and documentation for monthly EPS pension claim after completing qualifying service or reaching 58 years.
+            </p>
+          </div>
+          <button onclick="quickInquire('Pension (Form 10D)')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 7. Joint Declaration -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-signature"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              Joint Declaration
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Employer & Member Joint Filing</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Resolution for date of joining (DOJ), date of exit (DOE), or reasons for leaving rejection through official declaration.
+            </p>
+          </div>
+          <button onclick="quickInquire('Joint Declaration')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 8. EDLI Death Claim -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              EDLI Death Claim
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Form 5IF & Insurance</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Empathetic and complete paperwork guidance for nominee/family members to claim up to ₹7,00,000 EDLI benefit.
+            </p>
+          </div>
+          <button onclick="quickInquire('EDLI Death Claim')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 9. EPFO Grievance -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-clipboard-question"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              EPFO Grievance
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">EPFiGMS Escalation</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Filing official complaints for rejected claims, delayed settlements, or unresponsive employers with regular tracking.
+            </p>
+          </div>
+          <button onclick="quickInquire('EPFO Grievance')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 10. Passbook Download -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              Passbook Download
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">Balance & Contribution Check</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Check your latest monthly deposits, employer contribution breakdown, annual interest calculation, and download PDF.
+            </p>
+          </div>
+          <button onclick="quickInquire('Passbook Download')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- 11. PAN Card Services -->
+        <div class="service-card group bg-white p-6 rounded-2xl shadow-card border border-slate-100 hover:border-brand-blue/40 hover:-translate-y-1 transition duration-300 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition flex items-center justify-center text-2xl mb-5 shadow-sm">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy group-hover:text-brand-blue transition">
+              PAN Card Services
+            </h3>
+            <span class="inline-block text-xs font-semibold text-brand-accent mb-2">New & Correction Assistance</span>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Instant new PAN allotment, correction of surname/DOB, and linking PAN with Aadhaar to avoid PF withdrawal deduction penalties.
+            </p>
+          </div>
+          <button onclick="quickInquire('PAN Card Services')" class="mt-5 text-xs font-bold text-brand-blue group-hover:text-brand-accent flex items-center gap-1.5 transition">
+            Apply / Inquire Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- Contact Highlight Box within Grid -->
+        <div class="bg-gradient-to-br from-brand-navy to-brand-blue text-white p-6 rounded-2xl shadow-xl flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+          <div>
+            <span class="text-brand-gold text-xs font-black uppercase tracking-wider">Fast Assistance</span>
+            <h3 class="font-heading font-bold text-xl text-white mt-1 mb-2">Got a Complex PF Issue?</h3>
+            <p class="text-xs text-slate-200 leading-relaxed">
+              Don't worry if your employer is closed, non-cooperative, or your claim was rejected multiple times. We specialize in complex EPFO cases.
+            </p>
+          </div>
+          <div class="mt-6">
+            <a href="tel:8779695389" class="w-full bg-brand-gold hover:bg-amber-400 text-brand-dark font-extrabold text-xs py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition shadow">
+              <i class="fa-solid fa-phone"></i> Call 8779695389 Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="py-16 md:py-20 bg-white border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="bg-brand-navy text-white text-xs font-black uppercase tracking-widest px-4 py-1 rounded-full">
+          WHY CHOOSE US?
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl text-brand-navy">
+          Your Trusted PF Consultant
+        </h2>
+        <p class="text-slate-500 text-sm">
+          Dedicated guidance ensuring smooth processing without visiting multiple government offices.
+        </p>
+      </div>
+
+      <!-- 5 Key Highlights matching billboard icons -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        
+        <!-- 1. Fast Service -->
+        <div class="p-5 rounded-2xl bg-brand-softBg hover:bg-white hover:shadow-lg transition border border-slate-100 flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-amber-100 text-brand-accent flex items-center justify-center text-2xl mb-3">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <h4 class="font-heading font-extrabold text-sm sm:text-base text-brand-navy">FAST SERVICE</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Prompt filing and active tracking until settlement.</p>
+        </div>
+
+        <!-- 2. Trust & Guidance -->
+        <div class="p-5 rounded-2xl bg-brand-softBg hover:bg-white hover:shadow-lg transition border border-slate-100 flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-2xl mb-3">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <h4 class="font-heading font-extrabold text-sm sm:text-base text-brand-navy">TRUST & GUIDANCE</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Ethical advice tailored to your exact career history.</p>
+        </div>
+
+        <!-- 3. 100% Online Process -->
+        <div class="p-5 rounded-2xl bg-brand-softBg hover:bg-white hover:shadow-lg transition border border-slate-100 flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-3">
+            <i class="fa-solid fa-laptop-file"></i>
+          </div>
+          <h4 class="font-heading font-extrabold text-sm sm:text-base text-brand-navy">100% ONLINE</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Send docs on WhatsApp, no standing in long queues.</p>
+        </div>
+
+        <!-- 4. Affordable Fees -->
+        <div class="p-5 rounded-2xl bg-brand-softBg hover:bg-white hover:shadow-lg transition border border-slate-100 flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-amber-100 text-brand-accent flex items-center justify-center text-2xl mb-3">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+          </div>
+          <h4 class="font-heading font-extrabold text-sm sm:text-base text-brand-navy">AFFORDABLE FEES</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Transparent consultation fees with no hidden extras.</p>
+        </div>
+
+        <!-- 5. Customer Satisfaction -->
+        <div class="p-5 rounded-2xl bg-brand-softBg hover:bg-white hover:shadow-lg transition border border-slate-100 col-span-2 md:col-span-1 flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-blue-100 text-brand-navy flex items-center justify-center text-2xl mb-3">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4 class="font-heading font-extrabold text-sm sm:text-base text-brand-navy">CUSTOMER FIRST</h4>
+          <p class="text-[11px] text-slate-500 mt-1">High resolution rate and continuous client support.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Banner matching Billboard Bottom Section -->
+  <section class="bg-brand-navy text-white py-14 relative overflow-hidden border-t-4 border-brand-gold">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Branding & Direct Calling -->
+        <div class="lg:col-span-7 space-y-4">
+          <span class="bg-brand-gold text-brand-dark text-xs font-black px-3.5 py-1 rounded-md uppercase tracking-wider">
+            CONTACT US
+          </span>
+          
+          <div class="flex items-baseline gap-2">
+            <h3 class="font-heading font-black text-3xl sm:text-4xl text-brand-gold">RAUT</h3>
+            <span class="font-heading font-extrabold text-xl sm:text-2xl text-white">PF SERVICES</span>
+          </div>
+          
+          <p class="text-xs uppercase tracking-widest font-bold text-amber-300">
+            YOUR TRUST, OUR PROMISE
+          </p>
+
+          <!-- Large Billboard Phone Number Button -->
+          <div class="pt-2">
+            <a href="tel:8779695389" class="inline-flex items-center gap-3 bg-brand-dark/80 hover:bg-brand-dark border-2 border-brand-gold px-5 sm:px-8 py-3.5 rounded-2xl shadow-glow transition group">
+              <span class="w-12 h-12 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center text-2xl font-black group-hover:rotate-12 transition-transform">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div>
+                <span class="block text-xs uppercase font-bold text-slate-300">Tap to Call Directly</span>
+                <span class="font-heading font-black text-2xl sm:text-4xl text-brand-gold tracking-tight">
+                  8779695389
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Address & Email -->
+          <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-brand-gold text-base mt-0.5 shrink-0"></i>
+              <div>
+                <strong class="text-white block">Office Address:</strong>
+                <span>B9/5 Gharkul, Sector 15, Kharghar, Navi Mumbai – 410210</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-envelope text-brand-gold text-base mt-0.5 shrink-0"></i>
+              <div>
+                <strong class="text-white block">Official Email:</strong>
+                <a href="mailto:rautsuhas003.bvg@gmail.com" class="hover:text-brand-gold transition underline underline-offset-2">
+                  rautsuhas003.bvg@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Scan to Connect WhatsApp Box -->
+        <div class="lg:col-span-5 flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-6 bg-brand-dark/60 p-6 rounded-3xl border border-white/10">
+          
+          <div class="text-center sm:text-right space-y-1">
+            <span class="inline-block bg-emerald-500 text-brand-dark text-[10px] font-black uppercase px-2.5 py-0.5 rounded">
+              FASTEST CONNECT
+            </span>
+            <h4 class="font-heading font-black text-xl text-white uppercase tracking-wide">SCAN TO CONNECT</h4>
+            <p class="text-xs text-slate-300 max-w-[180px]">Instant WhatsApp chat on your phone</p>
+            <div class="pt-2">
+              <a href="https://wa.me/918779695389?text=Hello%20Raut%20PF%20Services,%20I%20need%20help%20with%20my%20PF." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-brand-gold hover:underline">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Click Here to Chat
+              </a>
+            </div>
+          </div>
+
+          <!-- Dynamic high-res QR Code pointing directly to WhatsApp -->
+          <div class="bg-white p-3 rounded-2xl shadow-xl flex flex-col items-center shrink-0">
+            <img 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fwa.me%2F918779695389%3Ftext%3DHello%2520Raut%2520PF%2520Services%2C%2520I%2520need%2520help%2520with%2520my%2520PF." 
+              alt="Scan WhatsApp QR Raut PF Services" 
+              class="w-32 h-32 object-contain"
+              loading="lazy"
+            />
+            <span class="mt-1.5 font-heading font-black text-[11px] uppercase tracking-widest text-brand-navy flex items-center gap-1">
+              <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i> WHATSAPP
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Trademark & Copyright -->
+      <div class="mt-12 pt-6 border-t border-slate-700/60 text-center text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© 2026 RAUT PF SERVICES. All Rights Reserved.</p>
+        <p class="text-slate-400">Navi Mumbai • Kharghar • Online EPFO Assistance</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mobile Fixed Contact Bar (Call & WhatsApp) -->
+  <div class="fixed bottom-0 inset-x-0 bg-brand-dark/95 backdrop-blur-md border-t border-brand-gold/30 p-2.5 z-40 md:hidden flex items-center justify-between gap-2 shadow-2xl">
+    <a href="tel:8779695389" class="flex-1 bg-brand-gold hover:bg-amber-400 text-brand-dark font-black py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs uppercase tracking-wide">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call: 8779695389</span>
+    </a>
+    <a href="https://wa.me/918779695389?text=Hello%20Raut%20PF%20Services,%20I%20need%20PF%20assistance." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs uppercase tracking-wide">
+      <i class="fa-brands fa-whatsapp text-base"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    // Quick Inquire trigger from any service card
+    function quickInquire(serviceName) {
+      const selectElem = document.getElementById('serviceNeeded');
+      if (selectElem) {
+        selectElem.value = serviceName;
+      }
+      // Scroll to consultation box
+      const formElement = document.getElementById('leadForm');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const nameInput = document.getElementById('clientName');
+        if (nameInput) {
+          nameInput.focus();
+        }
+      }
+    }
+
+    // Lead Form Handler with WhatsApp pre-fill redirection
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('clientName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const service = document.getElementById('serviceNeeded').value;
+      const note = document.getElementById('clientNote').value.trim();
+      
+      const toast = document.getElementById('formSuccessToast');
+      if (toast) {
+        toast.classList.remove('hidden');
+      }
+
+      // Prepare formatted WhatsApp text
+      let text = `*New Inquiry - RAUT PF SERVICES*\n`;
+      text += `• *Name:* ${name}\n`;
+      text += `• *Phone:* ${phone}\n`;
+      text += `• *Service Required:* ${service}\n`;
+      if (note) {
+        text += `• *Details:* ${note}\n`;
+      }
+      text += `\nPlease guide me on the next steps.`;
+
+      const encodedText = encodeURIComponent(text);
+      const whatsappUrl = `https://wa.me/918779695389?text=${encodedText}`;
+
+      // Open WhatsApp after a brief confirmation display
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 400);
+    }
+  </script>
+
+</body>
+</html>
